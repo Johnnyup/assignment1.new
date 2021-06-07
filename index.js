@@ -8,9 +8,9 @@ let candidateName;
 
 
 // TODO 1.2a: Define question, correctAnswer, and candidateAnswer //
-let question = ("Who was the first American woman in space? ");
+let firstQuestion = ("Who was the first American woman in space? ");
 let correctAnswer = "Sally Ride";
-let candidateAnswer = input.question(question);
+let candidateAnswer = input.question(firstQuestion);
 
 console.log("Your answer: " + candidateAnswer);
 console.log("Correct answer: " + correctAnswer);
@@ -38,21 +38,29 @@ if (correctAnswer === candidateAnswer) {
 //console.log("TODO 1.1b");
 //console.log();
 
+let askName = ("Enter your name: ");
 
-
-function askForName() {
-  candidateName = input.question("Enter your name: ") 
+function askForName(askName) {
+  candidateName = input.question(askName); 
 return `Hello, ${candidateName}!`
 }
 
-console.log(askForName());
 
-console.log(candidateName);
+
+console.log(askForName(askName));
+
+// console.log(candidateName);
 console.log("Your quiz begins now. Please answer these questions: ");
 
 console.log()
 console.log("TODO 1.2b");
 console.log()
+
+/*function askAQuestion () {
+  candidateAnswer = input.
+}
+*/
+
 
 //console.log(questions);
 
